@@ -1,13 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { MyPager } from './MyPager';
+
+const images = [
+  'https://m.media-amazon.com/images/I/81JulKoOyLL._SL1500_.jpg',
+  'https://m.media-amazon.com/images/I/81DJbe2OaSL._SL1346_.jpg',
+  'https://m.media-amazon.com/images/I/81ycygHeWaS._SL1500_.jpg',
+  'https://m.media-amazon.com/images/I/81QoNRp5+WL._SL1353_.jpg',
+];
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <MyPager images={images} />;
 }
 
 const styles = StyleSheet.create({
